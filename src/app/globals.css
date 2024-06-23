@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply dark:bg-vm-900 bg-vm-100
+}
+
+input {
+  @apply dark:text-vm-200 dark:placeholder:text-vm-200 dark:border-vm-800 text-vm-900 placeholder:text-vm-900 border-vm-200 font-jetbrains dark:bg-vm-900 bg-vm-100;
+}
+
+.iconTheme {
+  @apply cursor-pointer dark:text-vm-200 text-vm-900
+}
