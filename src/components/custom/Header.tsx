@@ -8,7 +8,11 @@ import { userStore } from "@/lib/zustand";
 
 export function Header() {
   const { name } = userStore()
-  const storage = JSON.parse(localStorage.getItem("user") || "{}").state
+  let storage = { name: "SemeaTech" }
+
+  if(typeof window !== "undefined") {
+    storage = JSON.parse(localStorage.getItem("user") || "{}").state
+  }
   return (
     <header 
       className="p-5 flex gap-2 w-full border-b dark:border-b-vm-800 border-b-vm-200"
